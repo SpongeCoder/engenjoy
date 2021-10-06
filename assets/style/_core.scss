@@ -1,0 +1,39 @@
+@import "vendor/normalize";
+@import "vendor/skeleton";
+
+body {
+	font-family: $font;
+	background-color: #fff;
+}
+
+p {
+	color: #000;
+}
+
+a {
+	font-size: 14px;
+	color: #000;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+include, textarea {
+	font-family: $font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $fontSerif;
+	font-weight: bold;
+}
+
+h3 { 
+	font-size: 2.4rem; 
+
+	@media (max-width: 780px) {
+		font-size: 3.4rem;
+	}
+
+}

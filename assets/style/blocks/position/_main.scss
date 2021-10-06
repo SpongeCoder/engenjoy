@@ -1,0 +1,52 @@
+.left {
+	position: absolute;
+	left:0;
+	width: 22%;
+
+	@media screen and (max-width: 780px) {
+		position: relative;	
+		width: 100%;
+
+		.quote { display: none; }
+	}
+}
+
+.center {
+	margin: 0 auto;
+	max-width: 55%;
+
+	img {
+		max-width:100%;
+	}
+
+	@media screen and (min-width: 780px) {
+		.quote { display: none; }
+	}
+
+	@media screen and (max-width: 780px) {
+		width: 100%;
+		max-width: 100%;
+
+		.quote { display: block; }
+	}
+}
+
+.right {
+	width: 210px;
+	position: absolute;
+	top:0;
+	right: 0;
+	text-align: center;
+	width: 22%;
+
+	.form-search {
+		max-width: 190px;
+		width: 100%;
+		margin: 20px auto 0 auto;
+	}
+
+	@media screen and (max-width: 780px) {
+		display: none;		
+	}
+
+}

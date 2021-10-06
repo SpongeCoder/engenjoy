@@ -1,0 +1,22 @@
+&_black {
+	color: $black;
+	border-color: $black;
+
+	&::after { border-color: $black; }
+	&::before { background-position: -229px -203px; }
+
+	&:hover {
+		border-color:$yellow;
+		color: $black;
+
+		&::after { border-color: $yellow; }
+		&::before { background-position: -229px -203px; }
+	}
+
+	&:active {
+		border-color:$yellow2;
+		color: $yellow2;
+
+		&::after { border-color: $yellow2; }
+	}
+}

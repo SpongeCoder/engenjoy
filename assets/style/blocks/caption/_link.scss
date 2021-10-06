@@ -1,0 +1,56 @@
+&_link {
+	padding-top: 75px;
+	padding-bottom: 50px;
+	display: block;
+	text-decoration: none;
+	border:none;
+	overflow: hidden;
+	transition:all 0.3s;
+	position: relative;
+
+	&::before {
+		left:0;
+		right:0;
+		top:25px;
+		margin: 0 auto;
+	}
+
+	&::after {
+		content:'';
+		position: absolute;
+		background-color: #dac04c;
+		width: 100%;
+		height: 100%;
+		top:0;
+		left:0;
+		z-index: -1;
+		transform:translateX(100%);
+		transition:transform 0.5s;
+		opacity:0.95;
+	}
+
+	p {
+		margin: 15px 0 35px 0;
+	}
+
+	.gray-image { opacity:0.5 }
+	.link { opacity:0 }
+
+	&:hover {
+		
+		color: white;
+
+		p { color: white; }
+
+		&::after { transform:translateX(0px); }
+
+		.link { opacity: 1}
+
+		.gray-image {
+			z-index: -1; 
+		 	opacity:1; 
+		}
+	}
+	
+	&:active { opacity: 0.8; }
+}

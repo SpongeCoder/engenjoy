@@ -1,0 +1,9 @@
+&_gray {
+	@extend .link_black;
+
+	color: #b4b4b4;
+	border-color:$light-gray;
+
+	&::after { border-color:$light-gray; }
+	&::before { background-position: -43px -238px; }
+}

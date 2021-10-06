@@ -1,0 +1,23 @@
+&_orange {
+	color: $yellow;
+	
+	&::after { background-color: $yellow; }
+	&::before { background-position: -56px -238px; }
+
+	&:hover {
+		background: #f9f3e0;
+		color: $yellow;
+
+		&::before { background-position: -149px -96px; }
+	}
+
+	&:active {
+		background: #fff;
+		color: $yellow2;
+		
+		&::after {
+			background: $yellow2;
+			border-left:1px solid $yellow2;
+		}
+	}
+}

@@ -1,0 +1,177 @@
+@mixin icons {
+
+	&::before {
+		content:'';
+		position: absolute;
+		background: url('../img/main.png') no-repeat;
+		left:0;
+		bottom:0;
+	}
+
+	&_hat::before {
+		background-position: -163px -162px;
+	  width: 42px;
+	  height: 23px;
+	}
+
+	&_corp::before {
+		background-position: -79px -203px;
+	  width: 35px;
+	  height: 27px;
+	}
+
+	&_coffee::before {
+		background-position: 0px -162px;
+	  width: 34px;
+	  height: 36px;
+	}
+
+	&_speak::before {
+		background-position: -251px -68px;
+	  width: 31px;
+	  height: 29px;
+	}
+
+	&_pen::before {
+		background-position: -251px -155px;
+	  width: 23px;
+	  height: 23px;
+	}
+
+	&_news::before {
+		background-position: -251px -209px;
+	  width: 25px;
+	  height: 20px;
+	}
+
+	&_video::before {
+		background-position: -251px -128px;
+	  width: 25px;
+	  height: 22px;
+	}
+
+	&_bag::before {
+		background-position: -251px -183px;
+	  width: 25px;
+	  height: 21px;
+	}
+
+	&_topik::before {
+		background-position: -214px -98px;
+	  width: 23px;
+	  height: 21px;
+	}
+
+	&_book::before {
+		background-position: -214px -73px;
+	  width: 25px;
+	  height: 20px;
+	  bottom:auto;
+	  top:0;
+	}
+
+	&_crown::before {
+		background-position: -251px -102px;
+	  width: 28px;
+	  height: 21px;
+	}
+}
+
+@mixin icons-big {
+
+	&::before {
+		content:'';
+		position: absolute;
+		background: url('../img/main.png') no-repeat;
+		left:0;
+		bottom:0;
+	}
+
+	&_hat::before {
+		background-position: -163px -162px;
+	  width: 42px;
+	  height: 23px;
+	}
+
+	&_corp::before {
+		background-position: -79px -203px;
+	  width: 35px;
+	  height: 27px;
+	}
+
+	&_coffee::before {
+		background-position: 0px -162px;
+	  width: 34px;
+	  height: 36px;
+	}
+
+	&_speak::before {
+		background-position: -251px -68px;
+	  width: 31px;
+	  height: 29px;
+	}
+
+	&_pen::before {
+		background-position: -214px -37px;
+	  width: 31px;
+	  height: 31px;
+	}
+
+	&_news::before {
+		background-position: -80px -162px;
+	  width: 36px;
+	  height: 29px;
+	}
+
+	&_video::before {
+		background-position: -251px 0px;
+	  width: 33px;
+	  height: 29px;
+	}
+
+	&_bag::before {
+		background-position: -39px -162px;
+	  width: 36px;
+	  height: 30px;
+	}
+
+	&_topik::before {
+		background-position: -251px -34px;
+	  width: 32px;
+	  height: 29px;
+	}
+
+	&_book::before {
+		background-position: -38px -203px;
+	  width: 36px;
+	  height: 27px;
+	}
+
+	&_crown::before {
+		background-position: -121px -162px;
+	  width: 37px;
+	  height: 28px;
+	}
+}
+
+
+@mixin icons-more {
+
+	&_headphone::before {
+		background-position: -126px -48px;
+	  width: 33px;
+	  height: 43px;
+	}
+	
+	&_subscript::before {
+		background-position: -167px -122px;
+	  width: 35px;
+	  height: 35px;
+	}
+
+	&_heart::before {
+		background-position: 0px -203px;
+	  width: 33px;
+	  height: 30px;
+	}
+}

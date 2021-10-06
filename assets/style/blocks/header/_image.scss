@@ -1,0 +1,13 @@
+&__img {
+	background: url('../img/big-image.jpg') no-repeat center -8.4rem;
+	height: 43.7rem;
+	text-align: center;
+	color: #fff;
+	margin-top: 84px;
+	margin-bottom: 5rem;
+
+	@media screen and (max-width: 500px) {
+		margin-bottom: 3.5rem;
+	}
+}
+

@@ -1,0 +1,30 @@
+.ol-list {
+	list-style-type: none;
+	padding: 0;
+
+	span {
+		position: absolute;
+		left:0;
+		font-family: Arial;
+		font-size: 1.1rem;
+		color: $yellow;
+		display: inline-block;
+		border:1px solid $yellow;
+		border-radius:50%;
+		margin-right: 1rem;
+		width: 2rem;
+	  height: 2rem;
+	  line-height: 2rem;
+	  text-align: center;
+
+	  @media screen and (max-width:780px) {
+	  	top: 1rem;
+	  	font-size: 1.4rem;
+	  }
+	}
+
+	li {
+		position: relative;
+		padding-left: 3rem;
+	}
+}

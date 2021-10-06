@@ -1,0 +1,18 @@
+&_icon {
+
+	@include icons-big;
+	@include icons-more;
+	
+	&::before {
+		bottom: auto;
+		top:0;
+	}
+	
+	&_headphone:hover::before { background-position: 0px -114px; }
+	&_subscript:hover::before { background-position: -124px -114px;	}
+
+	@media screen and (min-width:780px) {
+		&_hat {width: 600px;}	
+	}
+
+}

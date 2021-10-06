@@ -1,0 +1,54 @@
+.quote {
+		
+	&__text {
+		font-weight: 300;
+		font-style: italic;
+		font-size: 1.4rem;
+		color: #adadad;
+		margin-bottom: 10px;
+
+		span {
+			font-weight: normal;
+			color: #858585;
+		}
+	}
+
+	&__author {
+		font-weight: normal;
+		font-style: normal;
+		font-size: 1.3rem;
+		font-family: $fontSerif;
+		color: $black;
+
+		span {
+			display: block;
+			width: 70%;
+			margin: 15px 0 0 15px;
+			font-size: 1.2rem;
+			font-weight: 300;
+			font-style: italic;
+			color: #b2b2b2;
+		}
+	}
+	
+	@media screen and (min-width:780px) {
+		width: 90%;
+	}
+	
+	@media screen and (max-width:780px) {
+		text-align: center;
+
+		&__text {
+			font-size: 1.9rem;
+		}
+
+		&__author {
+			font-size: 1.7rem;
+
+			span {
+				margin: 0;
+				width: 100%;
+			}
+		}
+	}
+}

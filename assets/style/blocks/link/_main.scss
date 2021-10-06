@@ -1,0 +1,42 @@
+.link {
+	padding: 5px 53px 5px 20px;
+	display: inline-block;
+	position: relative;
+	border:1px solid $yellow;
+	font-size: 1.4rem;
+	text-decoration: none;
+	transition:all 0.3s;
+
+	&::before {
+		content:'';
+		position: absolute;
+		background: url('../img/main.png') no-repeat;
+		z-index: 1;
+	  top: 0;
+  	bottom: 0;
+  	margin: auto;
+  	right: 11px;
+  	width: 8px;
+	  height: 12px;
+	}
+
+	&::after {
+		content:'';
+		position: absolute;
+		width: 34px;
+		height: 100%;
+		border-left:1px solid $yellow;
+		top:0;
+		right:0;
+		transition:all 0.3s;
+	}
+
+	@import "orange";
+	@import "black";
+	@import "gray";
+	@import "white";
+
+	@media screen and (max-width: 780px) {
+		font-size: 1.8rem;
+	}
+}

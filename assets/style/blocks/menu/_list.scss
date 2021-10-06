@@ -1,0 +1,23 @@
+&_list {
+	text-align: left;
+	margin: 0 0 0 21px;
+
+	.menu__item {
+		float: none;
+		width: auto;
+		margin: 0 0 20px 0;
+		padding-left: 3.5rem;
+		line-height: 1.4;
+	}
+
+	.menu__link {
+		display: inline;
+		border-bottom:1px solid #e3cb78;
+		color: $black;
+
+		&:hover {
+			text-decoration: none;
+			color: $yellow;
+		}
+	}
+}

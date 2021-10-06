@@ -1,0 +1,52 @@
+.man {
+	position: relative;
+	
+	&::before {
+		content:'';
+		position: absolute;
+		background:url('../img/main.png') no-repeat;
+	}
+
+	img {max-width: 100%;}
+
+	&_vertical {
+		text-align: right;
+		margin-bottom: 35px;
+		margin-top: 40px;
+
+		&::before {
+			background-position: -126px 0px;
+		  width: 36px;
+		  height: 43px;
+		  bottom:100px;
+		  left: 0;
+		  right: 0;
+			margin: 0 auto;
+		}
+
+		p {
+			color: white;
+			font-size: 2rem;
+			font-weight: bold;
+			font-family: $fontSerif;
+			position: absolute;
+			bottom:0;
+			width: 100%;
+			text-align: center;
+
+			@media screen and (max-width:980px) {
+				font-size: 1.8rem;
+			}
+		}
+
+		span {
+			font-weight: normal;
+			font-size: 1.8rem;
+
+			@media screen and (max-width:980px) {
+				font-size: 1.6rem;
+			}
+		}
+
+	}
+}

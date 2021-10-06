@@ -1,0 +1,38 @@
+.form-search {
+	position: relative;
+
+	input.form-search__field {
+		border:2px solid $yellow;
+		border-radius:0;
+		padding-right: 0;
+		width: 100%;
+  	padding-right: 37px;
+  	outline: none;
+	}
+
+	button.form-search__icon {
+		position: absolute;
+		top:0;
+		right:0;
+		height: 36px;
+		width: 35px;
+		background: $yellow;
+		padding: 0;
+		border:none;
+		border-radius:0;
+
+		&::before {
+			content: '';
+			position: absolute;
+			background:url('../img/main.png') no-repeat;
+			background-position: -119px -203px;
+		  width: 18px;
+		  height: 18px;
+		  left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+}

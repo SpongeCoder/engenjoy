@@ -1,0 +1,9 @@
+&_white {
+	color: white;
+	border-color:white;
+
+	&::before { background-position: -149px -96px; }
+	&::after { border-color:white }
+
+	&:hover { color: white;	}
+}

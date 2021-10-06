@@ -1,0 +1,199 @@
+doctype html
+html
+	meta(charset="utf-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	title Enjoy English
+	
+	include ./block/header.jade
+
+	main
+		.content
+			.left
+				.caption.caption_icon.caption_icon_hat
+					h2.caption__heading Дистанционное изучение <br> английского языка
+					p.caption__slogan в онлайн школе «ОК-lessons»
+				.gray-image.gray-image_tower
+				include ./block/quote.jade
+
+			.center
+				.distance-lessons
+					img(src="img/woman.jpg")
+					p.
+						<b>Дистанционное изучение английского языка</b> — это способ изучения языка по скайпу. Изучая английский дистанционно, вы экономите 
+						деньги и время. Можно долго и нудно рассказывать про дистанционное изучение английского языка, но нам это не надо!
+					p.
+						Давайте просто просмотрим  все преимущества изучения английского по скайпу:
+
+					.yellow-circle__wrapper
+						a(href="#").yellow-circle.yellow-circle_big.yellow-circle_icon_calendar
+							span Удобный график
+						a(href="#").yellow-circle.yellow-circle_big.yellow-circle_icon_economy
+							span Экономия денег
+						a(href="#").yellow-circle.yellow-circle_big.yellow-circle_icon_time
+							span Экономия времени
+					
+					p.yellow__border.
+						Хотелось бы отдельно подчеркнуть, <b>что вашим репетитором может 
+						быть не только русский преподаватель, но и носитель языка!</b>
+
+					include ./block/quote.jade
+
+					h3 Как проходят занятия
+					p Я отвечу на самые часто задаваемые вопросы
+					ul.ol-list
+						li
+							span 1
+							a(href="#") Что потребуется для изучения английского по скайпу?
+						li
+							span 2
+							a(href="#") Как проходят уроки английского по скайпу?
+						li
+							span 3
+							a(href="#") Могу ли я  заниматься в группе?
+						li
+							span 4
+							a(href="#") Где  взять учебные материалы?
+						li
+							span 5
+							a(href="#") Надо ли делать домашнее задание?
+						li
+							span 6
+							a(href="#") Как записаться на пробный бесплатный урок?
+
+					.image-block
+						h4.image-block__heading Запишитесь на бесплатный пробный урок по скайпу
+						img(src="img/headphone.png").image-block__img.image-block__img_headphone
+						a(href="#").link.link_black.image-block__link Записаться
+					
+					include ./block/video.jade
+
+			.right
+				include ./block/free-lessons.jade
+
+				.caption.caption_small
+					h3.caption__heading Материалы
+					p.caption__slogan для изучения английского<br> языка
+				ul.menu__items.menu__items_list
+					li.menu__item.menu__item_icon.menu__item_icon_pen
+						a(href="#").menu__link Грамматика
+					li.menu__item.menu__item_icon.menu__item_icon_book
+						a(href="#").menu__link Разговорник английского языка онлайн
+					li.menu__item.menu__item_icon.menu__item_icon_topik
+						a(href="#").menu__link Топик
+					li.menu__item.menu__item_icon.menu__item_icon_bag
+						a(href="#").menu__link Деловой английский
+					li.menu__item.menu__item_icon.menu__item_icon_crown
+						a(href="#").menu__link Праздники в Англии
+					li.menu__item.menu__item_icon.menu__item_icon_video
+						a(href="#").menu__link Видеоуроки
+					li.menu__item.menu__item_icon.menu__item_icon_news
+						a(href="#").menu__link Интересные новости
+				
+				.caption.caption_small
+					h3.caption__heading Поиск по сайту
+					form(action="#").form-search
+						input(type="text", name="g").form-search__field
+						button.form-search__icon
+
+				.man.man_vertical
+					img(src="img/man-vertical.jpg")
+					p Неформальные<br> встречи<br> <span>с носителем языка</span>
+
+				include ./block/subscript.jade
+
+			.left
+				.caption.caption_icon.caption_icon_news
+					h2.caption__heading Интересные<br> новости
+					p.caption__slogan история, события<br> и факты
+					.gray-image.gray-image_car
+
+			.center.distance-lessons
+				.news_big
+					img(src="img/assets/news.jpg")
+					h3 Королева Великобритании
+					p.
+						Елизавета II является королевой Великобритании более 60-ти лет. 
+						Ее восхождение на престол произошло в 1952 году. Елизавета II стала 
+						не только известнейшей женщиной планеты . . .
+					a(href="#").link.link_black Читать
+
+			.center.distance-lessons
+				.news
+					.news_small
+						img(src="img/assets/news-small.jpg")
+						p.news__date 10 февраля 2015 г
+						h3 Арабские Эмираты (Arabic Emirates)
+						p.
+							Статья о самых красивых и интересных местах 
+							в Объединенных Арабских Эмиратах . . .
+						a(href="#").link.link_black Читать
+					.news_small
+						img(src="img/assets/news-small.jpg")
+						p.news__date 10 февраля 2015 г
+						h3 Cockney slang
+						p.
+							История знаменитого диалекта кокни. 
+							Существует несколько вариаций cовременного английского языка . . . .
+						a(href="#").link.link_black Читать
+					.clear
+					.video__link
+						a(href="#").link.link_gray Еще новости
+			.left
+				.caption.caption_icon.caption_icon_heart
+					h2.caption__heading Самое<br> популярное<br> на сайте
+					p.caption__slogan все что вам нравится
+				.gray-image.gray-image_hand
+			
+			.center.distance-lessons
+				.news.news_popular
+					.news_small
+						img(src="img/assets/news-small.jpg")
+						p.news__date Разговорник английского языка
+						h3 Английская тема «Погода»
+						p.
+							Полезные слова и выражения, которые вы можете использовать 
+							в речи, когда говорите о погоде. Также в разделе . . . 
+						a(href="#").link.link_black Читать
+					.news_small
+						img(src="img/assets/news-small.jpg")
+						p.news__date Грамматика
+						h3 Оборот<br> there is / there are
+						p.
+							Один из самых часто употребляемых оборотов в английском языке. 
+							Давайте рассмотрим подробнее, что он из себя представляет . . . 
+						a(href="#").link.link_black Читать
+					.clear
+
+				h4 Смотрите так же
+				ul
+					li
+						a(href="#") Дифтонги в английском
+					li
+						a(href="#") Согласные звуки английского языка
+					li
+						a(href="#") Гласные звуки английского языка
+					li
+						a(href="#") Английская тема «Погода»
+				ul
+					li
+						a(href="#") Косвенная речь в английском языке
+					li
+						a(href="#") Выражение to have something done
+					li
+						a(href="#") Слова-связки в английском языке
+					li
+						a(href="#") Предлоги в английском языке правила
+
+		//- a(href="#").link.link_black Читать
+		//- br
+		//- a(href="#").link.link_gray Посмотреть все новости
+		//- br
+		//- a(href="#") Какая то ссылка
+		//- ul
+		//- 	li
+		//- 		a(href="#") List link
+
+	footer
+	
+	link(rel="stylesheet", href="css/style.css")
+	script(src="js/main.js")
